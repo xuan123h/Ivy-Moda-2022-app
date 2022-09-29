@@ -100,6 +100,7 @@ header:hover {
   border-bottom: 1px solid #333;
   background: transparent;
   outline: none;
+  padding: 0px 25px 0px 0px;
 }
 .others > li:first-child i {
   position: absolute;
@@ -984,15 +985,15 @@ footer {
   font-weight: 400;
   padding: 20px 0;
 }
-.row {
+.row-column {
   display: flex;
   flex-direction: column;
 }
-.row label {
+.row-column label {
   padding: 0 20px;
   color: white;
 }
-.row input {
+.row-column input {
   width: 90%;
   height: 30px;
   border-radius: 20px;
@@ -1001,7 +1002,7 @@ footer {
   margin: 12px 20px;
   padding: 0 10px;
 }
-.row input:last-child {
+.row-column input:last-child {
   width: 50%;
   text-align: center;
   display: flex;
@@ -1012,7 +1013,7 @@ footer {
   background: gold;
   font-weight: bold;
 }
-.row div {
+.row-column div {
   margin: 10px 30px;
   color: #ddd;
 }

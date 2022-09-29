@@ -1,4 +1,4 @@
-// Bắt sự kiện scroll
+// 1. Bắt sự kiện scroll
 const header = document.querySelector("header");
 window.addEventListener("scroll", function () {
   // Chiêu dọc
@@ -9,6 +9,8 @@ window.addEventListener("scroll", function () {
     header.classList.remove("sticky");
   }
 });
+//
+// 2. Slider
 var dotItem = document.querySelectorAll(".dot");
 var arrayImg = [];
 function loadImg() {
@@ -42,8 +44,7 @@ function play() {
   t = setInterval("next()", 4000);
 }
 //
-
-// Menu - Slidebar - Category
+// 3. Menu - Slidebar - Category
 const itemsliderbar = document.querySelectorAll(".category-left-li");
 itemsliderbar.forEach(function (menu, index) {
   menu.addEventListener("click", function () {
@@ -83,7 +84,7 @@ if (button) {
       .classList.toggle("activeB");
   });
 }
-// Bấm vào ảnh
+// 4. Bấm vào ảnh
 const bigImg = document.querySelector(".product-content-left-big-img img");
 const smalImg = document.querySelectorAll(
   ".product-content-left-small-img img"
@@ -125,7 +126,8 @@ function validate() {
   }
 
   // Validate email
-  var regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  var regexEmail =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (regex.test(email) == false) {
     msgEmail.innerHTML = "Sai định dạng email";
   } else {
